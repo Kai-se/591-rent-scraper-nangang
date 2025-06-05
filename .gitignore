@@ -1,2 +1,4 @@
-# 忽略 node_modules
 node_modules/
+.env
+591_data.json
+.DS_Store
