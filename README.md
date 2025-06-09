@@ -84,7 +84,7 @@ npx playwright install
 - intervalMinutes 為程式執行的時間間隔
 - fetchCount 為每次執行程式，每個篩選條件下的所獲取的最新房源數量（包含最近更新的房源），程式的邏輯是比對上一次執行所存下的房源，篩選出沒看過的物件，並推播給使用者
 
-如使用此方法執行程式，讓本機作為伺服器使用，另外需將 `index.js` 內 `setInterval(checkForNewListings, intervalMs);` 的註解拿掉
+最後，將 `index.js` 內 `setInterval(checkForNewListings, intervalMs);` 的註解拿掉
 
 ## 執行
 
