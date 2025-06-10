@@ -30,13 +30,13 @@ npx playwright install
 
 ## Configuration
 
-1. ### 取得 Discord Webhook
+### 取得 Discord Webhook
 
 1. **打開你的 Discord 頻道**  
    找一個你有管理權限的伺服器，並進入你想收到通知的文字頻道
-1. **開啟整合功能**  
+2. **開啟整合功能**  
    點擊頻道名稱旁邊的 ⚙️（編輯頻道）→ 點選左側選單的 **整合**
-1. **新增 Webhook**
+3. **新增 Webhook**
 
    - 點選 **建立 Webhook**
    - 你可以：
@@ -46,27 +46,25 @@ npx playwright install
 
    ![webhook-img](https://github.com/user-attachments/assets/0e886d70-bc26-489a-9baa-29563266bccc)
 
-1. **貼到 `.env` 中**  
+4. **貼到 `.env` 中**  
    先將專案根目錄的 `.env.example` 檔案改名為 `.env`，再貼上剛複製的網址
-
    ```env
    DISCORD_WEBHOOK_URL=your_webhook_url_here
    ```
 
-1. ### 設置篩選條件網址
+### 設置篩選條件網址
 
 1. 去 591 租屋網設置想要獲取通知的設定  
    ![591-filter](https://github.com/user-attachments/assets/8a492220-0516-4d11-a384-f723fe1067db)
 
-1. 往下滑，並設定排序為 **最新**  
+2. 往下滑，並設定排序為 **最新**  
    ![591-sort-by](https://github.com/user-attachments/assets/305d39a6-2b60-40e5-b52c-9c19eb08a8ac)
 
-1. 複製網址  
+3. 複製網址  
    ![591-url](https://github.com/user-attachments/assets/ae33e03b-8457-422a-bf2e-1cf46da7ce3f)
 
-1. 貼到 `config.json` 中  
+4. 貼到 `config.json` 中  
     打開專案根目錄的 `config.json`，貼上剛複製的網址，如果想要有多個篩選條件（例如：台北市、新北市），可以重複以上步驟，並按照下面格式貼上網址
-
    ```json
    "urls": [
     "your_first_url",
@@ -74,7 +72,7 @@ npx playwright install
    ],
    ```
 
-1. ### 其他設定 - 使用本機排程定期執行
+### 其他設定 - 使用本機排程定期執行
 
 在 `config.json` 中，有兩個參數能自行調整：
 
