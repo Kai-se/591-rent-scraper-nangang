@@ -1,9 +1,10 @@
 name: Run 591 Scraper Hourly
 
 on:
-  # 每小時的第 0 分鐘執行；UTC 時區
+  # 每小時的第 0 分鐘執行 (UTC 時區)
+  # 對應台灣時間 (UTC+8) 的 08:00 至 22:00
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0-14 * * *'
   workflow_dispatch:  # 手動觸發
 
 jobs:
